@@ -49,7 +49,7 @@ def draw_circle(start, end):
     circle(radius)
     end_fill()
 
-
+#aqui, basandome en la logica de como realizar el cuadrado en la parte de arriba, cambie la logica para que cambie a rectangulo. 
 def rectangle(start, end):
     """Draw rectangle from start to end."""
     up()
@@ -64,14 +64,14 @@ def rectangle(start, end):
     end_fill()
     	
 
-
+#aqui, basandome en la logica de como realizar el cuadrado en la parte de arriba, cambie la logica para que cambie a triangulo.
 def triangle(start, end):
     """Draw triangle from start to end."""
     up()
     goto(start.x, start.y)
     down()
     begin_fill()
-    side_length = ((end.x - start.x)**2 + (end.y - start.y)**2)**0.5  # Calcular la distancia entre start y end
+    side_length = ((end.x - start.x)**2 + (end.y - start.y) ** 2) ** 0.5
     for _ in range(3):
         forward(side_length)
         left(120)
