@@ -35,6 +35,7 @@ def square(start, end):
 
     end_fill()
 
+#Se realizó la función para dibujar un circulo utilizando la letra "c" 
 
 def draw_circle(start, end):
     """Draw circle with given start and end points."""
@@ -88,7 +89,10 @@ onkey(lambda: color('white'), 'W')
 onkey(lambda: color('green'), 'G')
 onkey(lambda: color('blue'), 'B')
 onkey(lambda: color('red'), 'R')
+
+#Se agregó el color morado con la letra "P"
 onkey(lambda: color('purple'), 'P')
+
 onkey(lambda: store('shape', line), 'l')
 onkey(lambda: store('shape', square), 's')
 onkey(lambda: store('shape',draw_circle), 'c')
